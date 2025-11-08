@@ -1,0 +1,11 @@
+flowchart TD
+    A[Start] --> B[Sign In with Clerk]
+    B --> C[Dashboard]
+    C --> D[User enters message in AI Chat]
+    D --> E[Request sent to API Chat Route]
+    E --> F[Vercel AI SDK processes request]
+    F --> G[Extract amount date and category]
+    G --> H[Insert transaction in Supabase]
+    H --> I[API sends confirmation response]
+    I --> J[Display confirmation to user]
+    J --> K[End]
